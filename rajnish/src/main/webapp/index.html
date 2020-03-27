@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient management</title>
+</head>
+<body>
+<h2>Enter patient list management</h2>
+<form onsubmit ="return validate()" action="viewall" method="get">
+Please enter the name:<br>
+<input id="na" type="text" placeholder ="name" name="nme"><br>
+
+<button type="submit">click here</button>
+</form>
+</body>
+<script type="text/javascript">
+function validate()
+{
+var user= document.getElementById("na");
+if (user.value =="Sonu")
+	{
+	return true;
+	}
+else 
+	{alert("wrong user id is it");
+	return false;
+	}
+}
+
+</script>
+</html>
